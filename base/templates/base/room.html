@@ -2,5 +2,17 @@
 
 {% block content %}
 <h1>{{room.name}}</h1>
+    <div>
+        <h3>Pariticipants</h3>
+        <hr>
+
+        {% for user in participants %}
+        <div>
+            <p>@{{user.username}}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
 
 {% endblock %}
